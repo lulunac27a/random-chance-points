@@ -5,7 +5,7 @@ const numberList = [];
 let points = 0;
 
 addNumberButton.addEventListener('click', () => {
-    const number = parseInt(numberInput.value);
+    const number = parseInt(numberInput.value, 10);
     if (!isNaN(number)) {
         numberList.push(number);
         numberInput.value = '';
