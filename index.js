@@ -6,7 +6,7 @@ let points = 0;
 
 addNumberButton.addEventListener('click', () => {
     const number = parseInt(numberInput.value, 10);
-    if (!isNaN(number)) {
+    if (!isNaN(number) && number > 1) {
         numberList.push(number);
         numberInput.value = '';
     }
