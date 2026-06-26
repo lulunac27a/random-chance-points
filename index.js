@@ -1,6 +1,6 @@
-const numberInput = document.getElementById('numberInput');
-const addNumberButton = document.getElementById('addNumber');
-const generateRandomButton = document.getElementById('generateRandom');
+const numberInput = document.getElementById('number-input');
+const addNumberButton = document.getElementById('add-number');
+const generateRandomButton = document.getElementById('generate-random');
 const numberList = [];
 let points = 0;
 
@@ -9,6 +9,9 @@ addNumberButton.addEventListener('click', () => {
     if (!isNaN(number) && number >= 2) {
         numberList.push(number);
         numberInput.value = '';
+    }
+    else {
+        alert('Please enter a valid number greater than or equal to 2.');
     }
 });
 
