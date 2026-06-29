@@ -1,6 +1,9 @@
 const numberInput = document.getElementById('number-input');
 const addNumberButton = document.getElementById('add-number');
 const generateRandomButton = document.getElementById('generate-random');
+const numberTableBody = document.getElementById('number-table-body');
+const pointsDisplay = document.getElementById('points');
+const numbersDisplay = document.getElementById('numbers');
 const numberList = [];
 let points = 0;
 
@@ -22,6 +25,6 @@ generateRandomButton.addEventListener('click', () => {
             points += number;
         }
     }
-    document.getElementById('points').textContent = points;
-    document.getElementById('numbers').textContent = numberList.length;
+    pointsDisplay.textContent = points;
+    numbersDisplay.textContent = numberList.length;
 });
